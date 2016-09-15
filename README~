@@ -1,0 +1,62 @@
+Name:               Justin Wong
+ONE Card Number:    1368821
+Unix ID:            wong5
+Lecture Section:    A1
+Instructor's Name:  Davood Rafiei
+Lab Section:        D06
+TA's Name:          Ali Yadollahi
+
+//Comments are indicated by '//' similar to C.
+
+IMPROVEMENTS (* indicates improvement activated by -i option)
+-----------------------------------------------------------------------------------------------------------
+Game manual on startup explaining controls and victory conditions for a user friendly interface.
+Getopt
+Upon landing, lander will land on the actual lander instead of the thrusters.
+*Explosion upon crashes. 		//Might lag but hey, looks cool. :D
+*Color of explosion flame changes after explosion. Looks more like an actual flame.
+*Color. 				//Yes, a green moon is an improvement. Don't. Judge Me............
+*Background music on youtube. 		//This is disabled auomatically.
+					//To enable playing music from youtube, uncomment line 148.
+					//To close firefox afterwards when 'q' is pressed, uncomment line 232.
+*Screenwrap.
+*Convenient velocity tracker for a user friendly interface.
+*Bullets fly out from the landscape. 	//Gives the game the feeling of an action game.
+
+COLLABORATIONS
+-----------------------------------------------------------------------------------------------------------
+Elvis Lo
+Eric Chang
+Ruby Dejesus
+Xuping Fang
+Phillip Zhang
+Eric Ng
+
+HOW TO RUN
+-----------------------------------------------------------------------------------------------------------
+Compile program by typing make in the Terminal.
+Remove compiled components by typing make clean in Terminal.
+
+Run executable file in mimic mode by typing
+./lander -f landscape.txt -t thrust -g gravity
+where landscape.txt == a valid landscape file
+where -20 <= thrust <= 0
+where 0 <= gravity <= 20
+-f = landscape flag
+-t = thrust flag
+-g = gravity flag
+Flags can be inputted in any order.
+
+Run executable file in improvement mode by typing
+./lander -f landscape.txt -t thrust -g gravity -i
+where landscape.txt == a valid landscape file
+where -20 <= thrust <= 0
+where 0 <= gravity <= 20
+-f = landscape flag
+-t = thrust flag
+-g = gravity flag
+-i = improvement flag
+Flags can be inputted in any order.
+
+
+
